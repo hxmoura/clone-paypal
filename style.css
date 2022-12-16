@@ -1,0 +1,569 @@
+@import url(//db.onlinewebfonts.com/c/d3398b63eaca40daee65f5fa3b69402c?family=PayPal+Sans+Small);
+@import url(//db.onlinewebfonts.com/c/0930cc324c97c2d3be7b1a09e76fdaa2?family=PayPal+Sans+Big+Light);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+.header {
+    background-color: #FFFFFF;
+    height: 72px;
+    display: flex;
+    font-family: 'PayPal Sans Small';
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1190px;
+    min-width: 1190px;
+    padding: 0 50px;
+    height: 100%;
+}
+
+.logo-container {
+    width: 136px;
+    height: 43px;
+    margin-right: 123px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2c2e2f;
+    cursor: pointer;
+    font-size: .875rem;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 1px;
+    padding: 25px 20px;
+    display: flex;
+}
+
+.nav-item:hover {
+    border-bottom: 4px solid #0070BA;
+}
+
+.arrow-container {
+    width: 17px;
+    margin-left: 7px;
+}
+
+.btn-signin {
+    background-color: transparent;
+    color: #0070BA;
+    border: 1px solid #0070BA;
+    outline: none;
+    border-radius: 25px;
+    margin-right: 9px;
+    cursor: pointer;
+    padding: 10px 16px;
+    margin-left: 60px;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.btn-signup {
+    background-color: #0070BA;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 11px 16px;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.btn-signup:hover {
+    background-color: #005EA6;
+}
+
+
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* SECTION - HOME */
+.home {
+    width: 100%;
+    height: 463px;
+    background: url('./imgs/banner-bg.jpg') center center no-repeat;
+    background-position-y: -95px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container {
+    width: 100%;
+    max-width: 1190px;
+}
+
+.home-title {
+    color: #fff;
+    font-weight: 400;
+    font-family: "PayPal Sans Big Light";
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.home-subtitle {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'PayPal Sans Small';
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    background-color: #fff;
+    border-radius: 25px;
+    color: #0070ba;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'PayPal Sans Small';
+    padding: 15px 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.home-cards-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.home-card-text,
+.home-terms {
+    font-family: 'PayPal Sans Small';
+    color: #fff;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.home-card {
+    width: 45px;
+    margin-right: 8px;
+}
+
+
+
+/* SECTION - COMPANY */
+.company {
+    width: 100%;
+    height: 106px;
+    background-color: #0D3685;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-container {
+    width: 100%;
+    max-width: 1190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-text {
+    font-family: "PayPal Sans Big Light";
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.company-btn {
+    background-color: #FFFFFF;
+    color: #0D3685;
+    padding: 11px 15px;
+    border-radius: 25px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-family: 'PayPal Sans Small';
+    cursor: pointer;
+}
+
+
+
+/* SECTION - SHOPPING */
+.shopping {
+    height: 437px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-container {
+    max-width: 1190px;
+    display: flex;
+    height: 100%;
+}
+
+.shopping-information-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopping-image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-image {
+    height: 350px;
+}
+
+.shopping-title {
+    font-family: "PayPal Sans Big Light";
+    color: #00a8ea;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.shopping-description {
+    color: #2c2e2f;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PayPal Sans Small';
+    margin: 20px 0 30px 0;
+}
+
+.shopping-buy {
+    display: block;
+    background-color: transparent;
+    border: 1px solid #005ea6;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #005ea6;
+    border-radius: 25px;
+    padding: 14px;
+    cursor: pointer;
+    font-family: 'PayPal Sans Small';
+    max-width: 55%;
+}
+
+.shopping-more {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #005ea6;
+    outline: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #005ea6;
+    border-radius: 25px;
+    padding: 8px 5px;
+    cursor: pointer;
+    font-family: 'PayPal Sans Small';
+    margin-top: 25px;
+    max-width: 55%;
+}
+
+.shopping-play-icon {
+    margin-right: 80px;
+}
+
+
+
+/* PAYMENTS */
+.payments {
+    height: 437px;
+    background-color: #F5F7FA;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* MARCAS PREFERIDAS */
+.favorite-brands {
+    width: 100%;
+    height: 350px;
+    background-color: #F5F7FA;
+    display: flex;
+    justify-content: center;
+}
+
+.favorite-brands-container {
+    max-width: 1190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-brands-title {
+    margin-bottom: 65px;
+}
+
+.favorite-brands-img {
+    width: 123px;
+}
+
+.favorite-brands-space {
+    margin-right: 30px;
+}
+
+
+
+
+
+/* CALL TO ACTION */
+.cta {
+    width: 100%;
+    height: 465px;
+    background-color: #00A8EA;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    max-width: 1190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-title {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: "PayPal Sans Big Light";
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px 100px;
+    border: none;
+    outline: none;
+    color: #0d3685;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'PayPal Sans Small';
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.cta-counter {
+    margin-right: 2px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 41px;
+    font-weight: 900;
+    font-family: 'PayPal Sans Small';
+    color: #000;
+    padding: 10px 20px;
+}
+
+
+
+
+
+/* SECTION - CONTACT */
+.contact {
+    background-color: #2C2E2F;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 1190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    font-family: "PayPal Sans Big Light";
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contact-subtitle {
+    font-family: "PayPal Sans Big Light";
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-container-options {
+    display: flex;
+    margin-top: 50px;
+}
+
+.contact-option {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.contact-card-title {
+    font-family: "PayPal Sans Big Light";
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.contact-card-desc {
+    color: #fff;
+    font-family: 'PayPal Sans Small';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.contact-highlighted-text {
+    font-family: 'PayPal Sans Small';
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-link-hover:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* TERMS */
+.terms {
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-container {
+    max-width: 1190px;
+}
+
+.terms-title,
+.terms-item,
+.terms-note {
+    color: #2c2e2f;
+    font-weight: 400;
+    font-family: 'PayPal Sans Small';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.terms-note {
+    font-weight: 700;
+}
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #fff;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1190px;
+}
+
+.footer-link-top {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'PayPal Sans Small';
+    line-height: 22px;
+    color: #2c2e2f;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.footer-link-bottom {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'PayPal Sans Small';
+    line-height: 22px;
+    color: #687173;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.footer-years {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'PayPal Sans Small';
+    line-height: 22px;
+    color: #687173;
+    text-decoration: none;
+    margin: 0 13px 0 270px;
+}
+
+.footer-line {
+    margin: 10px 0;
+}
+
+.footer-link-top:hover, .footer-link-bottom:hover {
+    text-decoration: underline;
+}
