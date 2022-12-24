@@ -1,5 +1,12 @@
-@import url(//db.onlinewebfonts.com/c/d3398b63eaca40daee65f5fa3b69402c?family=PayPal+Sans+Small);
-@import url(//db.onlinewebfonts.com/c/0930cc324c97c2d3be7b1a09e76fdaa2?family=PayPal+Sans+Big+Light);
+@font-face {
+    font-family: PaypalSansBigLight;
+    src: url(./fonts/PayPal-Sans-Big-Light.ttf)
+}
+@font-face {
+    font-family: PaypalSansSmallRegular;
+    src: url(./fonts/PayPal-Sans-Small-Regular.ttf)
+}
+
 
 * {
     margin: 0;
@@ -17,7 +24,7 @@ body {
     background-color: #FFFFFF;
     height: 72px;
     display: flex;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
 }
 
 .header-container {
@@ -201,7 +208,7 @@ body {
     font-size: 2.5rem;
     line-height: 36px;
     font-weight: 400;
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     margin-bottom: 15px;
     max-width: 350px;
 }
@@ -210,7 +217,7 @@ body {
 .home-mobile-subtitle {
     color: #fff;
     font-weight: 400;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     font-size: 1.063rem;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -225,7 +232,7 @@ body {
     color: #0070ba;
     font-weight: 700;
     font-size: .9rem;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     padding: 13px 24px;
     max-width: 320px;
     width: 90%;
@@ -247,7 +254,7 @@ body {
 .home-terms,
 .home-mobile-terms,
 .home-mobile-card-text {
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     color: #fff;
     margin-right: 8px;
     font-weight: 400;
@@ -358,7 +365,7 @@ body {
 }
 
 .company-text {
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     color: white;
     font-size: 1.5rem;
     line-height: 30px;
@@ -375,7 +382,7 @@ body {
     border: none;
     outline: none;
     font-weight: 700;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     cursor: pointer;
     font-size: .75rem;
 }
@@ -440,7 +447,7 @@ body {
 }
 
 .action-title {
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     color: #00a8ea;
     font-size: 2.5rem;
     font-weight: 900;
@@ -451,7 +458,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     margin: 20px 0 30px 0;
     max-width: 530px;
 }
@@ -465,7 +472,7 @@ body {
     color: #005ea6;
     border-radius: 25px;
     cursor: pointer;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     max-width: 320px;
     width: 100%;
     padding: 13px 20px;
@@ -483,7 +490,7 @@ body {
     color: #005ea6;
     border-radius: 25px;
     cursor: pointer;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     margin-top: 25px;
     padding: 13px 20px;
     /* padding: 7px 20px; */
@@ -593,7 +600,7 @@ body {
     font-size: 2.1rem;
     line-height: 3rem;
     font-weight: 700;
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     text-align: center;
     margin-bottom: 30px;
     max-width: 900px;
@@ -608,7 +615,7 @@ body {
     color: #0d3685;
     font-size: .9rem;
     font-weight: 700;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     cursor: pointer;
     margin-bottom: 60px;
     max-width: 320px;
@@ -621,7 +628,7 @@ body {
     background-color: #fff;
     font-size: 2.563rem;
     font-weight: 900;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     color: #000;
     padding: 10px 20px;
 }
@@ -649,14 +656,14 @@ body {
 }
 
 .contact-title {
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     font-size: 2.5rem;
     font-weight: 400;
     color: #fff;
 }
 
 .contact-subtitle {
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     font-size: 1.25rem;
     font-weight: 400;
     color: #fff;
@@ -676,7 +683,7 @@ body {
 }
 
 .contact-card-title {
-    font-family: "PayPal Sans Big Light";
+    font-family: PaypalSansBigLight;
     font-weight: 700;
     font-size: 1.25rem;
     color: #fff;
@@ -686,7 +693,7 @@ body {
 
 .contact-card-desc {
     color: #fff;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.6;
@@ -694,7 +701,7 @@ body {
 }
 
 .contact-highlighted-text {
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -750,7 +757,7 @@ body {
 .terms-note {
     color: #2c2e2f;
     font-weight: 400;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 1100px;
@@ -785,7 +792,7 @@ body {
 .footer-text {
     font-size: .875rem;
     font-weight: 700;
-    font-family: 'PayPal Sans Small';
+    font-family: PaypalSansSmallRegular;
     line-height: 22px;
     color: #2c2e2f;
     text-decoration: none;
