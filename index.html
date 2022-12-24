@@ -15,8 +15,19 @@
     <header class="header">
         <div class="header-container">
             <div class="header-content">
+                <div class="menu-container">
+                    <button class="menu-btn">
+                        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        Menu
+                    </button>
+                </div>
                 <div class="logo-container">
                     <img class="logo" src="./imgs/paypal.svg" alt="Paypal">
+                    <img class="logo-mobile" src="./imgs/icon.png" alt="Paypal">
                 </div>
                 <ul class="nav-container">
                     <li class="nav-item">
@@ -49,10 +60,9 @@
     <main class="main">
         <section class="home">
             <div class="home-container">
-                <h1 class="home-title">O PayPal agora tem débito on-line<sup>*</sup>.</h1>
+                <h1 class="home-title">O PayPal agora <br>tem débito on-line<sup>*</sup>.</h1>
                 <h2 class="home-subtitle">Adicione o cartão de débito à sua carteira do PayPal e comemore pequenas
-                    vitórias
-                    todos os dias.</h2>
+                    vitórias todos os dias.</h2>
                 <button class="home-btn">Crie uma conta grátis</button>
                 <div class="home-cards-container">
                     <span class="home-card-text">Cartões de débito</span>
@@ -65,104 +75,107 @@
                 <span class="home-terms">*Termos e condições aplicáveis</span>
             </div>
         </section>
+        <section class="home-mobile">
+            <div class="home-mobile-container">
+                <h2 class="home-mobile-subtitle">Adicione o cartão de débito à sua carteira do PayPal e comemore
+                    pequenas
+                    vitórias todos os dias.</h2>
+                <button class="home-mobile-btn">Crie uma conta grátis</button>
+                <div class="home-mobile-cards-container">
+                    <span class="home-mobile-card-text">Cartões de débito</span>
+                    <img class="home-card" src="./imgs/itau.png" alt="Itaú">
+                    <img class="home-card" src="./imgs/bradesco.png" alt="Bradesco">
+                    <img class="home-card" src="./imgs/nubank.png" alt="Nubank">
+                    <img class="home-card" src="./imgs/c6-icon.png" alt="C6">
+                    <img class="home-card" src="./imgs/inter.png" alt="Inter">
+                </div>
+                <span class="home-mobile-terms">*Termos e condições aplicáveis</span>
+            </div>
+        </section>
         <section class="company">
             <div class="company-container">
                 <h4 class="company-text">Quer conhecer as soluções do PayPal para Empresas? Conte com a gente para
                     vender dentro ou fora do seu país.</h4>
+                <h4 class="company-text company-text-mobile">Quer conhecer as soluções do PayPal para Empresas?</h4>
                 <button class="company-btn">PayPal para Empresas</button>
             </div>
         </section>
-        <section class="shopping">
-            <div class="shopping-container">
-                <div class="shopping-information-container">
-                    <h4 class="shopping-title">Vá às compras mundo afora</h4>
-                    <p class="shopping-description">Use o PayPal para comprar com segurança em milhões de lojas
+        <section class="action action-bg-blue">
+            <div class="action-container">
+                <div class="action-info-container">
+                    <h4 class="action-title">Vá às compras mundo afora</h4>
+                    <p class="action-description">Use o PayPal para comprar com segurança em milhões de lojas
                         virtuais,
                         grandes ou pequenas, no Brasil e no mundo<sup>1</sup>.</p>
-                    <button class="shopping-buy">Compre agora</button>
-                    <button class="shopping-more">
-                        <img class="shopping-play-icon"
-                            src="https://img.icons8.com/ios-filled/33/005ea6/play-button-circled--v4.png" />
+                    <button class="action-btn-buy">Compre agora</button>
+                    <button class="action-btn-more">
+                        <!-- <img class="action-play-icon"
+                            src="https://img.icons8.com/ios-filled/33/005ea6/play-button-circled--v4.png" /> -->
                         Saiba mais
                     </button>
                 </div>
-                <div class="shopping-image-container">
-                    <img class="shopping-image" src="imgs/shopping.png" alt="Shopping">
+                <div class="action-img-container">
+                    <img class="action-img" src="imgs/shopping.png" alt="Shopping">
                 </div>
             </div>
         </section>
-        <section class="payments">
-            <div class="shopping-container">
-                <div class="shopping-image-container">
-                    <img class="shopping-image" src="imgs/payments.png" alt="Payments">
+        <section class="action action-bg-white">
+            <div class="action-container">
+                <div class="action-img-container">
+                    <img class="action-img" src="imgs/payments.png" alt="Payments">
                 </div>
-                <div class="shopping-information-container">
-                    <h4 class="shopping-title">Crédito ou débito? A escolha é sua</h4>
-                    <p class="shopping-description">Com PayPal, você escolhe como pagar. Mesmo quando estiver sem
+                <div class="action-info-container">
+                    <h4 class="action-title">Crédito ou débito? A escolha é sua</h4>
+                    <p class="action-description">Com PayPal, você escolhe como pagar. Mesmo quando estiver sem
                         limite
                         disponível, pode pedir comida sem se preocupar em sacar dinheiro e fazer compras sem pagar
                         boletos.
                         Pague no débito e fique tranquilo. Adicione seus cartões de crédito e débito à sua conta e
                         escolha
                         qual usar a cada compra.</p>
-                    <button class="shopping-buy">Saiba mais</button>
-                    <button class="shopping-more">
-                        <img class="shopping-play-icon"
-                            src="https://img.icons8.com/ios-filled/33/005ea6/play-button-circled--v4.png" />
+                    <button class="action-btn-buy">Saiba mais</button>
+                    <button class="action-btn-more">
+                        <!-- <img class="action-play-icon"
+                            src="https://img.icons8.com/ios-filled/33/005ea6/play-button-circled--v4.png" /> -->
                         Assista ao vídeo
                     </button>
                 </div>
             </div>
         </section>
-        <section class="shopping">
-            <div class="shopping-container">
-                <div class="shopping-information-container">
-                    <h4 class="shopping-title">Quer devolver um produto? Nós podemos reembolsar o valor do frete.
-                    </h4>
-                    <p class="shopping-description">Ao devolver um produto comprado com PayPal, você pode ter
-                        direito ao
-                        reembolso dos custos do frete de devolução<sup>3</sup>.</p>
-                    <button class="shopping-buy">Saiba mais</button>
-                </div>
-                <div class="shopping-image-container">
-                    <img class="shopping-image" src="imgs/Dress-FreeReturnShipping.gif" alt="Free Return Shopping">
-                </div>
-            </div>
-        </section>
-        <section class="payments">
-            <div class="shopping-container">
-                <div class="shopping-image-container">
-                    <img class="shopping-image" src="imgs/installments.png" alt="installments">
-                </div>
-                <div class="shopping-information-container">
-                    <h4 class="shopping-title">Dê um alívio para seu bolso</h4>
-                    <p class="shopping-description">Pagar com o PayPal alivia seu fluxo de caixa mensal: faça
+        <section class="action action-bg-blue">
+            <div class="action-container">
+                <div class="action-info-container">
+                    <h4 class="action-title">Dê um alívio para seu bolso</h4>
+                    <p class="action-description">Pagar com o PayPal alivia seu fluxo de caixa mensal: faça
                         compras
                         parceladas com qualquer cartão de crédito.</p>
-                    <button class="shopping-buy">Cadastre seu cartão</button>
+                    <button class="action-btn-buy">Cadastre seu cartão</button>
+                </div>
+                <div class="action-img-container">
+                    <img class="action-img" src="imgs/installments.png" alt="installments">
                 </div>
             </div>
         </section>
-        <section class="shopping">
-            <div class="shopping-container">
-                <div class="shopping-information-container">
-                    <h4 class="shopping-title">Compre on-line com segurança</h4>
-                    <p class="shopping-description">Compras on-line mais protegidas com monitoramento contra fraudes
+        <section class="action action-bg-white">
+            <div class="action-container">
+                <div class="action-img-container">
+                    <img class="action-img" src="imgs/confidence.png" alt="confidence">
+                </div>
+                <div class="action-info-container">
+                    <h4 class="action-title">Compre on-line com segurança</h4>
+                    <p class="action-description">Compras on-line mais protegidas com monitoramento contra fraudes
                         24
                         horas por dia, Proteção ao Comprador<sup>4</sup> e reembolso dos custos do frete de
                         devolução
                         por
                         nossa conta. Verifique os termos e condições.</p>
-                    <button class="shopping-buy">Saiba mais</button>
-                </div>
-                <div class="shopping-image-container">
-                    <img class="shopping-image" src="imgs/confidence.png" alt="confidence">
+                    <button class="action-btn-buy">Saiba mais</button>
                 </div>
             </div>
         </section>
         <section class="favorite-brands">
             <div class="favorite-brands-container">
-                <h4 class="favorite-brands-title shopping-title">Compre nas suas marcas preferidas</h4>
+                <h4 class="favorite-brands-title action-title">Compre nas suas marcas preferidas</h4>
                 <div class="favorite-brands-img-container">
                     <img class="favorite-brands-img favorite-brands-space" src="./imgs/uber_eats.png" alt="UberEats">
                     <img class="favorite-brands-img favorite-brands-space" src="./imgs/wish.png" alt="Wish">
@@ -211,7 +224,7 @@
                             rápidas.
                             <br>
                             <br>
-                            <a class="contact-highlighted-text contact-link-hover" href="/">Clique e tire suas
+                            <a class="contact-highlighted-text contact-link-hover" href="/">Clique aqui e tire suas
                                 dúvidas</a>
                         </p>
                     </div>
@@ -222,12 +235,11 @@
                             Estamos disponíveis 24 horas por dia, 7 dias por semana. Serviço de Atendimento ao
                             Cliente
                             do
-                            PayPal: <strong class="contact-highlighted-text">0800 047 4482</strong>.
+                            PayPal: <br><strong class="contact-highlighted-text">0800 047 4482</strong>.
                             <br>
                             <br>
-                            Pessoas com deficiência auditiva ou de fala: <strong class="contact-highlighted-text">0800
-                                729
-                                7252</strong>.
+                            Pessoas com deficiência auditiva ou de fala: <br><strong
+                                class="contact-highlighted-text">0800 729 7252</strong>.
                         </p>
                     </div>
                     <div class="contact-option">
@@ -275,17 +287,6 @@
                     <li class="terms-item">Os programas de pontos podem variar. Consulte a operadora do seu cartão
                         de
                         crédito para saber mais.</li>
-                    <li class="terms-item">A oferta de Frete Grátis na Devolução é oferecida pelo PayPal do Brasil
-                        em
-                        parceria com a TELUS International Europe e é válida até 31 de dezembro de 2020. Cada
-                        cliente
-                        PayPal
-                        cadastrado no programa é elegível a um reembolso do frete de devolução por mês, limitado a
-                        90
-                        reais
-                        e respeitando a política de devolução do vendedor. Consulte os Termos e condições
-                        aplicáveis.
-                    </li>
                     <li class="terms-item">Conheça as regras do Programa de Proteção ao Comprador no site do PayPal.
                         Sujeito
                         ao cumprimento dos requisitos do Programa.</li>
@@ -304,24 +305,33 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <a class="footer-link-top" href="/">Ajuda</a>
-            <a class="footer-link-top" href="/">Fale Conosco</a>
-            <a class="footer-link-top" href="/">Tarifas</a>
-            <a class="footer-link-top" href="/">Segurança</a>
-            <a class="footer-link-top" href="/">Apps</a>
-            <a class="footer-link-top" href="/">Onde comprar</a>
-            <a class="footer-link-top" href="/">Programa de Parceiros</a>
-            <a class="footer-link-top" href="/">Avalie sua experiência</a>
-            <hr class="footer-line"/>
-            <a class="footer-link-bottom" href="/">Sobre</a>
-            <a class="footer-link-bottom" href="/">Newsroom</a>
-            <a class="footer-link-bottom" href="/">Trabalhe conosco</a>
-            <a class="footer-link-bottom" href="/">Desenvolvedores</a>
-            <span class="footer-years">© 1999–2022</span>
-            <a class="footer-link-bottom" href="/">Acessibilidade</a>
-            <a class="footer-link-bottom" href="/">Privacidade</a>
-            <a class="footer-link-bottom" href="/">Cookies</a>
-            <a class="footer-link-bottom" href="/">Termos de uso</a>
+            <div class="footer-items-top">
+                <a class="footer-text footer-color-1 footer-link" href="/">Ajuda</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Fale Conosco</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Tarifas</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Segurança</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Apps</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Onde comprar</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Programa de Parceiros</a>
+                <a class="footer-text footer-color-1 footer-link" href="/">Avalie sua experiência</a>
+            </div>
+            <hr class="footer-line" />
+            <div class="footer-items-bottom">
+                <div class="footer-items-left">
+                    <a class="footer-text footer-color-2 footer-link" href="/">Sobre</a>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Newsroom</a>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Trabalhe conosco</a>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Desenvolvedores</a>
+                </div>
+                <hr class="footer-line footer-line-mobile" />
+                <div class="footer-items-right">
+                    <span class="footer-text footer-color-2">© 1999-2022</span>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Acessibilidade</a>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Privacidade</a>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Cookies</a>
+                    <a class="footer-text footer-color-2 footer-link" href="/">Termos de uso</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
