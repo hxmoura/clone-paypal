@@ -2,6 +2,7 @@
     font-family: PaypalSansBigLight;
     src: url(./fonts/PayPal-Sans-Big-Light.ttf)
 }
+
 @font-face {
     font-family: PaypalSansSmallRegular;
     src: url(./fonts/PayPal-Sans-Small-Regular.ttf)
@@ -24,6 +25,7 @@ body {
     background-color: #FFFFFF;
     height: 72px;
     display: flex;
+    flex-direction: column;
     font-family: PaypalSansSmallRegular;
 }
 
@@ -73,6 +75,10 @@ body {
     display: flex;
 }
 
+.hover-dropdown {
+    border-bottom: 4px solid #0070BA;
+}
+
 .nav-item:hover {
     border-bottom: 4px solid #0070BA;
 }
@@ -80,6 +86,16 @@ body {
 .arrow-container {
     width: 17px;
     margin-left: 7px;
+}
+
+.arrow-rotate {
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+
+.arrow-desrotate {
+    transform: rotate(0deg);
+    transition: all .3s ease-in-out;
 }
 
 .buttons-container {
@@ -145,32 +161,201 @@ body {
 }
 
 @media(max-width: 1150px) {
+
     .logo,
     .btn-signup,
     .nav-container {
         display: none;
     }
+
     .header {
         height: 56px;
+        justify-content: center;
     }
+
     .header-content {
         margin: 0 25px;
     }
+
     .logo-container {
         min-width: auto;
         width: auto;
         height: auto;
     }
+
     .buttons-container {
         min-width: auto;
     }
 }
 
 @media(min-width: 1150px) {
+
     .logo-mobile,
     .menu-container {
         display: none;
     }
+}
+
+
+
+/* DROPDOWN */
+ul>li {
+    list-style: none;
+}
+
+.dropdown {
+    z-index: 3;
+    display: none;
+    background-color: #012169;
+    border-bottom: 1px solid #fff;
+    transition: all .4s ease-in-out;
+}
+
+.dropdown-open {
+    display: block;
+}
+
+.dropdown-1 {
+    min-height: 155px;
+}
+
+.dropdown-2 {
+    min-height: 292px;
+}
+
+.dropdown-3 {
+    min-height: 157px;
+}
+
+.dropdown-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.dropdown-section-1 {
+    width: 25%;
+    margin-top: 15px;
+}
+
+.dropdown-section-2 {
+    width: 37%;
+    margin-right: 30px;
+}
+
+.dropdown-more-2 {
+    width: 17%;
+}
+
+.dropdown-section-3 {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.dropdown-x {
+    margin-top: 18px;
+    right: 0px;
+    position: absolute;
+}
+
+.x {
+    width: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dropdown-text-1 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: PaypalSansSmallRegular;
+    font-size: 0.938rem;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.dropdown-text-bottom-1 {
+    font-size: 0.75rem;
+    line-height: 19px;
+}
+
+.dropdown-title-2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 22px;
+    font-family: PaypalSansBigLight;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid #4E6496;
+}
+
+.dropdown-text-2 {
+    color: #fff;
+    font-size: 0.938rem;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: PaypalSansSmallRegular;
+    text-decoration: none;
+}
+
+.dropdown-text-3 {
+    color: #fff;
+    font-size: 0.938rem;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: PaypalSansSmallRegular;
+    text-decoration: none;
+}
+
+.dropdown-border-3 {
+    border-left: 1px solid #4E6496;
+    padding-left: 30px;
+    height: 125px;
+}
+
+.dropdown-text-1:hover,
+.dropdown-text-2:hover,
+.dropdown-text-3:hover {
+    text-decoration: underline;
+}
+
+.dropdown-header-2 {
+    margin-bottom: 20px;
+    margin-top: 33px;
+}
+
+.dropdown-list-2 {
+    display: flex;
+}
+
+.dropdown-item-2 {
+    margin-bottom: 8px;
+}
+
+.dropdown-spacer-2 {
+    margin-right: 65px;
+}
+
+.dropdown-item-3 {
+    margin-bottom: 45px;
+}
+
+.dropdown-item-33 {
+    margin-bottom: 10px;
 }
 
 
@@ -253,7 +438,8 @@ body {
 .home-card-text,
 .home-terms,
 .home-mobile-terms,
-.home-mobile-card-text {
+.home-mobile-card-text,
+.home-mobile-debit-card {
     font-family: PaypalSansSmallRegular;
     color: #fff;
     margin-right: 8px;
@@ -262,6 +448,10 @@ body {
     width: 60px;
     text-align: center;
     line-height: 1.5;
+}
+
+.home-mobile-card-text {
+    display: flex;
 }
 
 .home-card {
@@ -310,20 +500,24 @@ body {
     .home {
         height: 395px;
     }
+
     .home-subtitle,
     .home-btn,
     .home-cards-container,
     .home-terms {
         display: none;
     }
+
     .home-mobile {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .home-mobile-terms {
         width: auto;
     }
+
     .home-title {
         text-align: center;
         margin-bottom: 0;
@@ -331,12 +525,14 @@ body {
         width: 260px;
         line-height: 36px;
     }
+
     .home-container {
         padding-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .home-mobile-cards-container {
         justify-content: center;
     }
@@ -395,6 +591,7 @@ body {
     .company-text {
         display: none;
     }
+
     .company-text-mobile {
         display: flex;
         font-size: 1.285rem;
@@ -493,27 +690,31 @@ body {
     font-family: PaypalSansSmallRegular;
     margin-top: 25px;
     padding: 13px 20px;
-    /* padding: 7px 20px; */
     max-width: 320px;
     width: 100%;
+    position: relative;
 }
 
-/* .action-play-icon {
-    margin-right: 5rem;
-} */
+.action-play-icon {
+    left: 5px;
+    position: absolute;
+}
 
 @media(max-width: 750px) {
     .action-title {
         font-size: 1.875rem;
         list-style: 2.25rem;
     }
+
     .action-container {
         flex-direction: column;
         padding: 40px 13px;
     }
+
     .action-img-container {
         width: 100%;
     }
+
     .action-info-container {
         width: 100%;
         align-items: center;
@@ -569,6 +770,7 @@ body {
     .favorite-brands-img {
         margin-bottom: 30px;
     }
+
     .favorite-brands-space {
         margin-right: 0;
     }
@@ -622,15 +824,63 @@ body {
     width: 100%;
 }
 
+.cta-row-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
 .cta-counter {
-    margin-right: 2px;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
+    margin-right: 5px;
+    width: 62px;
+    height: 70px;
+    border-radius: 20px;
     font-size: 2.563rem;
     font-weight: 900;
     font-family: PaypalSansSmallRegular;
     color: #000;
-    padding: 10px 20px;
+}
+
+@media(max-width: 319px) {
+    .cta-counter {
+        width: 20px;
+        height: 28px;
+        font-size: .8rem;
+        border-radius: 4px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 429px) {
+    .cta-counter {
+        width: 30px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+}
+
+@media(min-width: 430px) and (max-width: 535px) {
+    .cta-counter {
+        width: 40px;
+        height: 45px;
+        font-size: 1.3rem;
+        border-radius: 15px;
+    }
+}
+
+@media(min-width: 536px) and (max-width: 700px) {
+    .cta-counter {
+        width: 50px;
+        height: 55px;
+        font-size: 2rem;
+        border-radius: 15px;
+    }
 }
 
 
@@ -716,6 +966,7 @@ body {
     .contact-container-options {
         flex-direction: column;
     }
+
     .contact-option {
         display: flex;
         flex-direction: column;
@@ -723,10 +974,12 @@ body {
         margin-right: 0;
         margin-top: 40px;
     }
+
     .contact-card-desc {
         max-width: none;
         width: 100%;
     }
+
     .contact-title {
         font-size: 1.875rem;
     }
@@ -837,6 +1090,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
     }
+
     .footer-line-mobile {
         display: block;
     }
@@ -846,19 +1100,23 @@ body {
     .footer-line {
         display: none;
     }
+
     .footer-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .footer-items-bottom {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
+
     .footer-items-top {
         justify-content: center;
     }
+
     .footer-items-left {
         margin: 15px 0;
     }
